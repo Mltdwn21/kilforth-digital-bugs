@@ -1,0 +1,8 @@
+# Disables forcing blank issues — leaves the bug-report template as the
+# default while still letting testers file questions or feature notes
+# without the template.
+blank_issues_enabled: true
+contact_links:
+  - name: Project README
+    url: https://github.com/Mltdwn21/kilforth-digital-bugs#readme
+    about: What this repo is for, what's in a bundle, and privacy notes
