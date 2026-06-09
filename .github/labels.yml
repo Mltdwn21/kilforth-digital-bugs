@@ -1,0 +1,68 @@
+# Source of truth for the labels on this repo. Edit this file to add /
+# remove / re-colour labels; the sync-labels GitHub Action picks up
+# changes on push to main and reconciles them via the GitHub API.
+#
+# Hex colours are six characters, no leading "#".
+
+# ── Triage state (mutually exclusive in practice) ─────────────────────
+
+- name: triaged
+  color: '0e8a16'
+  description: 'Reviewed and accepted; queued for work.'
+
+- name: in-progress
+  color: 'fbca04'
+  description: 'Actively being investigated or fixed.'
+
+- name: needs-info
+  color: 'd93f0b'
+  description: 'Waiting on the reporter for more details.'
+
+- name: cant-reproduce
+  color: 'bfd4f2'
+  description: "Couldn't reproduce locally."
+
+- name: fixed-pending-release
+  color: '5319e7'
+  description: 'Fix is committed; will ship in the next build.'
+
+- name: released
+  color: '1d76db'
+  description: 'Fixed and shipped in a tagged build.'
+
+
+# ── Severity / category modifiers ─────────────────────────────────────
+
+- name: crash
+  color: 'b60205'
+  description: 'Hard crash (game closes / hangs).'
+
+- name: regression
+  color: 'e99695'
+  description: 'Used to work in an earlier build.'
+
+
+# ── Source markers (applied automatically) ────────────────────────────
+
+- name: bug
+  color: 'd73a4a'
+  description: "Something isn't working."
+
+- name: auto-submitted
+  color: '7e57c2'
+  description: 'Bundle was auto-submitted by the memory watcher.'
+
+
+# ── Resolution outcomes ───────────────────────────────────────────────
+
+- name: duplicate
+  color: 'cfd3d7'
+  description: 'Already tracked by another issue.'
+
+- name: wontfix
+  color: 'ffffff'
+  description: 'Known limitation; will not be worked on.'
+
+- name: question
+  color: 'd876e3'
+  description: 'Tester question or feedback, not a bug.'
